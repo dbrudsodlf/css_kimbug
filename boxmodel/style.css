@@ -1,0 +1,16 @@
+body{
+    font-family: "Poppins",sans-serif;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    border: 4px #000  solid;
+    /* border-radius: 50%; 원 모양을 원한다면 */
+    background-color: hotpink;
+}
+
+/* 속기형 : shorthand 방법은 시계방향을 기억하라 => top right bottom left 순서대로 */
