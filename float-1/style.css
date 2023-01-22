@@ -16,3 +16,24 @@
   }
   
   /* ▼ WHERE YOUR CODE BEGINS */
+  ul{
+    border: 1px solid blue; 
+    width:540px;
+    height:54px;
+    clear:both;
+    margin-top:30px;
+    margin-left: 30px;
+  }
+
+  li{
+    list-style: none;
+    float: left;
+    padding: 16px 20px 18px 20px;
+  }
+
+  .emails{
+    border-bottom: 2px solid blue;
+    padding-bottom: 14px; 
+    color:blue;
+  }
+
