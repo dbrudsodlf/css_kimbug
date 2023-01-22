@@ -1,3 +1,9 @@
+/* block강의 중요하니 확실히 알아두기 */
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Poppins",sans-serif;
 }
@@ -11,6 +17,10 @@ body{
     border: 4px #000  solid;
     /* border-radius: 50%; 원 모양을 원한다면 */
     background-color: hotpink;
+    color: yellow;
 }
 
 /* 속기형 : shorthand 방법은 시계방향을 기억하라 => top right bottom left 순서대로 */
+/* margin: 0 auto; 는 중앙정렬이라는 의미 top,bottom 은 0 left,right는 auto  */
+/* inline에서는 top과 bottom에서의 거리와 관련된 css는 사용하지 말것 */
+/* inline block의 경우 두개의 장점을 모두 합쳤기 때문에 inline에서 못먹는 것들 다 사용가능 */

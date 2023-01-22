@@ -17,23 +17,46 @@
   
   /* ▼ WHERE YOUR CODE BEGINS */
   ul{
-    border: 1px solid blue; 
-    width:540px;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .tab-menu{
+    border-bottom: 1px solid #E5EAEF; 
+    max-width: 540px;
+    /* width:540px;
     height:54px;
     clear:both;
     margin-top:30px;
-    margin-left: 30px;
+    margin-left: 30px; */
   }
 
-  li{
-    list-style: none;
+  tab-menu::after{
+    /* 가상요소를 만들어서 부모가 자신의 공간을 지킬 수 있다 
+    float가 무너지지 않도록*/
+    content: '';
+    display: block;
+    clear: left;
+  }
+
+
+  .tab-menu-item{
     float: left;
-    padding: 16px 20px 18px 20px;
+    margin-right: 16px;
   }
 
-  .emails{
+  .tab-menu-item a{
+    display: block;
+    padding: 16px 20px 16px 20px;
+  }
+
+  .tab-menu-item.selected{
     border-bottom: 2px solid blue;
-    padding-bottom: 14px; 
-    color:blue;
   }
 
+  .tab-menu-item.selected a{
+    color: blue;
+    font-weight: 500;
+    /* border-bottom: 2px solid blue;
+    위처럼안쓰고 여기다 써도됨 */
+  }
