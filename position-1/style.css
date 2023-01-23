@@ -1,17 +1,71 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
-  body {
-    font-family: "Lato", sans-serif;
-  }
-  
-  h1 {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #273444;
-  }
-  
-  /* ▼ WHERE YOUR CODE BEGINS */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #273444;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+.user-card{
+  width: 240px;
+  padding:8px 12px;
+  border:1px solid #E5EAEF;
+  border-radius: 4px;
+}
+.user-card::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.user-photo,
+.user-name {
+  float: left;
+}
+
+.user-photo{
+  margin-right: 12px;
+  position: relative;
+}
+.user-card {
+  position: relative;
+}
+
+.user-photo img {
+  display: block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.user-status {
+  float: left;
+  /* display: block; position값이 absolute로 지정하면 자동으로 block이 되므로 굳이 안써줘도 됨 */
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  /* position absolute에서 right/bottom left/top 둘중에 하나 쓰기 권장 */
+  background-color: #21D891;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.user-name {
+  padding: 8px 0;
+}
+
+/* position기준 
+viewport(전체화면)기준으로 움직인다면 fixed
+완전 맥락과 상관 없는 다른 위치 absolute
+원래 자기 위치에서 좀 옮기고 싶은 relative */
