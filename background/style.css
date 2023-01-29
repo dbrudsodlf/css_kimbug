@@ -9,6 +9,9 @@
 }
 .card{
   display: flex;
+  width: 840px;
+  height: 250px;
+  padding:24px;
 }
 .card-image {
   background-image: url(./assets/img-house-vertical.jpg);
@@ -17,8 +20,35 @@
   width: 300px;
   height: 200px;
   border-radius: 6px;
+  margin-right:24px;
 }
-
+.like-button{
+  background-image: url(./assets/icon-favorite.svg);
+  background-color: #FFFFFF;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  border:none;
+  margin: 12px;
+}
+.card-header{
+  display: flex;
+  margin-bottom: 9px;
+}
+.property-rate{
+  background-image: url(./assets/icon-star.svg);
+  color: #92174D;
+  background-repeat: no-repeat;
+}
+.property-type{
+  color:#7D858F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 185px;;
+}
 .plus-badge{
   width: 48px;
   height: 22px;
@@ -27,4 +57,25 @@
   color: #FFFFFF;
   text-transform: uppercase;
   padding: 1px 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.card-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.property-detail{
+  font-family: "Poppins", sans-serif;
+  color:#7D858F;
+  font-size: 14px;
+  font-weight: 400;
+}
+.dd{
+  margin-bottom: 8px;
 }
