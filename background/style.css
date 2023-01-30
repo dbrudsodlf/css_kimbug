@@ -13,13 +13,10 @@ body{
 .card{
   display: flex;
   width: 840px;
-  height: 250px;
   padding:24px;
 }
 .card-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   background-image: url(./assets/img-house.jpg);
   background-position: center center;
   background-size:cover;
@@ -30,18 +27,26 @@ body{
   border-radius: 6px;
   margin-right:24px;
 }
-.like-button{
+
+.card-image .like-button{
+  position: absolute;
+  top: 12px;
+  left: 12px;
   background-image: url(./assets/icon-favorite.svg);
   background-color: #FFFFFF;
   width: 36px;
   height: 36px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 24px 24px;
   border-radius: 50%;
+  background-position: center center;
   border:none;
-  margin: 12px;
+  cursor: pointer;
 }
 
+.card-content{
+  flex-grow: 1;
+}
 .card-header{
   display: flex;
   justify-content: space-between;
@@ -60,7 +65,7 @@ body{
   font-size: 14px;
   line-height: 1.4285714286;
   /* 20/14=1.4285714286 */
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 .property-type span{
@@ -68,7 +73,6 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  margin-right: 185px;;
 }
 
 .property-rate{
@@ -108,8 +112,29 @@ body{
 .property-detail{
   color:#7D858F;
   font-size: 14px;
-  font-weight: 400;
+  /* font-weight: 400; */
+  line-height: 1.1428571429;
 }
-.dd{
+
+.sr-only{
+  position: absolute;
+  z-index: -100;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.property-detail dd span::after{
+  content: '·';
+  margin: 0 6px;
+}
+
+.property-detail dd span:last-child::after{
+  content: '';
+  margin:0;
+}
+
+.property-detail div:first-child{
   margin-bottom: 8px;
-}
+} 
