@@ -1,1 +1,13 @@
 /* ▼ WHERE YOUR CODE BEGINS */
+.line-button{
+    padding:18px 30px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-width: 0;
+    transition: all 2500ms ;
+}
+
+.line-button:hover{
+    border-bottom: 2px solid #0066FF;
+}
