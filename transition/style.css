@@ -1,12 +1,43 @@
 /* ▼ WHERE YOUR CODE BEGINS */
-.line-button{
-    padding:18px 30px;
-    background-color: #fff;
-    border: none;
-    border-bottom: 2px solid #fff;
-    transition: all 2500ms ;
+*{
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.line-button:hover{
-    border-bottom: 2px solid #0066FF;
+body{
+    font-family: 'Lato',sans-serif;
+}
+
+button,
+input,
+textarea{
+    font-family: 'Lato',sans-serif;
+}
+
+button{
+    background-color: #fff;
+    border: none;
+}
+.line-button{
+    position: relative;
+    font-size: 16px;
+    line-height: 1.25;
+    color:#151b26;
+    padding:18px 30px;
+    cursor: pointer;
+}
+
+.line-button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0066FF;
+    transition: width 250ms ease-in, background-color 250ms ease-in ;
+}
+.line-button:hover::after{
+    width: 100%;
+    background-color: red;
 }

@@ -1,4 +1,12 @@
 /* ▼ WHERE YOUR CODE BEGINS */
+*{
+    box-sizing: border-box;
+    margin:0;
+ }
+
+ body{
+    font-family: 'Mulish',sans-serif;
+ }
 .loading{
     display: flex;
     align-items: center;
@@ -12,29 +20,55 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 1.3;
+    color:#151b26;
     margin-bottom: 20px;
+    text-align: center;
+    animation: flicker;
+    animation-duration: 1600ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .progress-bar{
+    position: relative;
     width: 300px;
     height: 12px;
     background-color: #E5EAEF;
     border-radius: 100px;
+    overflow: hidden;
 }
 .progress-bar-gauge{
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 12px;
     background-color: #13CE66;
     border-radius: 100px;
-    animation-name:load ;
-    animation-duration: 2s;
+    animation-name:loadbar ;
+    animation-duration: 1600ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
 }
 
-@keyframes load{
+@keyframes flicker {
     from{
-        width: 0;
+        opacity: 1;
     }
-
     to{
-        width: 300px;
+        opacity: 0;
+    }
+    
+}
+@keyframes loadbar{
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    90%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+        width: 100%;
+        opacity: 0;
     }
 }
