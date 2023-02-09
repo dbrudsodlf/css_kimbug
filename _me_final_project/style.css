@@ -63,7 +63,7 @@ p{
 }
 
 /* get started */
-
+/* mobile ver */
 .container{
     display: flex;
     flex-direction: column;
@@ -74,47 +74,114 @@ p{
 }
 .row{
     height: 100vh;
+    width: 100%;
 }
 
 .pinkline{
     height:568px ;
-    width: 1440px;
+    width: 100%;
     padding-top: 120px;
     background-color: #FDDED8;
 }
 .title{
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     font-weight: 700;
-    font-size: 70px;
-    line-height: -0.1em;
+    font-size: 40px;
+    line-height: -0.057em;
 }
 .title2{
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     font-weight: 400;
-    font-size: 22px;
-    line-height: -0.055em;
+    font-size: 16px;
+    line-height: -0.04em;
+}
+.title2::after{
+    content: 'coding & design';
 }
 .title-btn1{
-    margin-bottom: 120px;
-    padding: 14px 38px;
+    margin-bottom: 154px;
+    padding: 12px 35px;
     background-color: #3040C4;
     color: #fff;
     font-weight: 700;
-    font-size: 18px;
-    line-height: -0.025em;
+    font-size: 15px;
+    line-height: -0.021em;
     border: none;
     border-radius: 2px;
     margin-right: 16px;
 }
 .title-btn2{
-    margin-bottom: 120px;
-    padding: 14px 38px;
+    margin-bottom: 154px;
+    padding: 12px 35px;
     background-color: #fff;
     color: #3040C4;
     font-weight: 700;
-    font-size: 18px;
-    line-height: -0.025em;
+    font-size: 15px;
+    line-height: -0.021em;
     border: none;
     border-radius: 2px;
+}
+
+.grayline{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height:500px ;
+    width: 100%;
+    padding: 80px 15px;
+    background-color: #F4F5F7;
+}
+.line1,
+.line2{
+    display: flex;
+    flex-direction: column;
+}
+.line1 h3,
+.line2 h3{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: -0.03em;
+    margin-bottom: 16px;
+}
+.line1 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: -0.04em;
+    margin-bottom: 40px;
+}
+.line2 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: -0.04em;
+}
+/* pc ver */
+@media screen and (min-width:768px)  {
+
+    .pinkline{
+        height:568px ;
+        width: 1440px;
+        padding-top: 120px;
+        background-color: #FDDED8;
+    }
+    .title{
+        display: block;
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: -0.1em;
+    }
+    .title2{
+        margin-bottom: 32px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: -0.055em;
+    }
+    .title2::after{
+        content: 'frontend development';
+    }
+
+    .grayline{
+        flex-direction: row;
+    }
 }
