@@ -155,6 +155,116 @@ p{
     font-size: 16px;
     line-height: -0.04em;
 }
+
+.whiteline{
+    text-align: left;
+}
+.whiteline h3{
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    color: #009B4D;
+    line-height: -0.02em;
+    margin-bottom: 8px;
+}
+.whiteline h1{
+    display: block;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: -0.04em;
+    margin-bottom: 24px;
+}
+.whiteline p{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: -0.04em;
+    margin-bottom: 32px;
+}
+.threeimages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image1box,
+.image2box,
+.image3box{
+    box-shadow: 1px 1px 2px 2px gainsboro;
+    border-radius: 8px;
+    width: 290px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding:24px 74px 0 74px;
+}
+.image3box{
+    margin-bottom: 160px;
+}
+.image1::before{
+    content: '';
+    display: block;
+    width: 143px;
+    height: 200px;
+    background-image: url(./assets/img-fulltime-campus.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+}
+.image1{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: -0.025em;
+    margin-bottom: 32px;
+}
+.image2::before{
+    content: '';
+    display: block;
+    width: 143px;
+    height: 200px;
+    background-image: url(./assets/img-fulltime-remote.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+}
+.image2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: -0.025em;
+    margin-bottom: 32px;
+}
+.image3::before{
+    content: '';
+    display: block;
+    width: 143px;
+    height: 200px;
+    background-image: url(./assets/img-parttime-flex.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+}
+.image3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: -0.025em;
+    margin-bottom: 32px;
+}
+
+
+
+
+
+
+
+
+
+
 /* pc ver */
 @media screen and (min-width:768px)  {
 
