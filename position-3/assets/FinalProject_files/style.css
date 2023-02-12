@@ -363,29 +363,12 @@ p{
 .cancel a{
     color:#3040C4;
 }
-.footer{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 24px 0 30px 0;
-}
-.terms,
-.privacy,
-.license{
+.footer a{
     text-decoration: none;
     color: #807F81;
     font-size: 14px;
     font-weight: 400;
     line-height: -0.035em;
-}
-.terms{
-    margin: 0 266px 8px 15px;
-}
-.privacy{
-    margin: 0 266px 8px 15px;
-}
-.license{
-    margin: 0 266px 0 15px;
 }
 /* pc ver */
 @media screen and (min-width:768px)  {
