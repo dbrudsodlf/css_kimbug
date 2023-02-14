@@ -138,6 +138,7 @@ p{
     width: 100%;
     padding: 80px 15px;
     background-color: #F4F5F7;
+    margin-bottom: 80px;
 }
 .line1,
 .line2{
@@ -334,7 +335,7 @@ p{
     line-height: -0.04em;
     margin-bottom: 16px;
 }
-.lastone p{
+.sub{
     font-weight: 400;
     font-size: 16px;
     line-height: -0.04em;
@@ -348,7 +349,7 @@ p{
     border-radius: 2px;
     background-color: #fff;
     resize: none;
-    padding: 12px 156px 12px 16px;
+    padding: 12px 0 12px 16px;
     margin:0 15px 8px 15px;
 }
 .lastone button{
@@ -546,11 +547,42 @@ p{
         top: 0;
         width: 285px;
         height: 285px;
+        font-size: 40px;
+    }
+    .sub{
+        margin-right: 30px;
+        font-size: 22px;
+        margin-left: 0;
     }
     .lastone textarea{
-        width: 362px;
+        width: 300px;
         height:56px ;
-        padding: 16px 214px 16px 16px;
+        padding: 16px 0 16px 16px;
         font-size: 18px;
+        margin-left: 0;
     }
+    .emailenter{
+        display: flex;
+        flex-direction: row;
+    }
+    .lastone button{
+        width: 150px;
+        font-size: 18px;
+        padding:15px 15px;
+        margin-left: 0;
+    }
+    .cancel{
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .footer{
+        flex-direction: row;
+        padding: 8px 16px;
+    }
+    .terms,
+    .privacy,
+    .license{
+        margin:0 16px 0 0;
+    }
+
 }
