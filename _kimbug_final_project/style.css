@@ -141,7 +141,7 @@ p{
 
 /* Service */
 .service{
-    color: #f4f5f7;
+    background-color: #f4f5f7;
     padding:80px 0;
 }
 
@@ -177,7 +177,7 @@ p{
 .program-card{
     /* a 태그는 inline */
     display: block;
-    padding: 24px 0 32px 0;
+    padding: 24px 0 32px;
     border-radius: 8px;
     text-align: center;
     background-color: #fff;
@@ -198,7 +198,7 @@ p{
     display: block;
     width: auto;
     height: 195px;
-    margin: 0 auto 16px 0;
+    margin: 0 auto 16px ;
 }
 
 .program-card strong{
@@ -239,7 +239,7 @@ p{
 /* Subscription */
 .subscription{
     padding: 40px 0;
-    color: #f2f8fa;
+    background-color: #f2f8fa;
     text-align: center;
 }
 
@@ -297,6 +297,23 @@ p{
     color: #3040c4;
 }
 
+/* Footer */
+.footer{
+    padding: 24px 0;
+}
+.footer-link{
+    margin-bottom: 8px;
+}
+
+.footer-link:last-child{
+    margin-bottom: 0;
+}
+
+.footer-link a{
+    font-size: 14px;
+    line-height: 1.71428571;
+    color: #807f81;
+}
 /* > 768px (Desktop ver)  */
 @media screen and (min-width:768px){
     /* Reset CSS */
@@ -449,6 +466,25 @@ p{
     .subscription-form .form-notice{
         font-size:14px ;
         line-height: 1.7142857143;
+    }
+
+    /* Footer */
+    .footer{
+        padding: 16px 0;
+    }
+
+    .footer-links{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-link{
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+
+    .footer-link:last-child{
+        margin-right: 0;
     }
 }
 /* Custom Grid System - Fix container width */
